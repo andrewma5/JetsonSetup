@@ -69,5 +69,5 @@ pip3 install numba
 
 pip3 install 'https://github.com/jetson-nano-wheels/python3.6-scipy-1.5.4/releases/download/v0.0.1/scipy-1.5.4-cp36-cp36m-linux_aarch64.whl'
 
-sudo pip3 install packaging
-sudo pip3 install jupyterlab
+pip3 install packaging
+pip3 install jupyterlab
