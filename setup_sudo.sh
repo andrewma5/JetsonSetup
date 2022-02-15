@@ -3,6 +3,7 @@
 # Add the following two lines to the end of the file
 # export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
 # export LD_LIBRARY_PATH=/usr/local/cuda/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+# export OPENBLAS_CORETYPE=ARMV8
 
 real_user=$(whoami)
 
@@ -62,3 +63,11 @@ cd tbb/build
 sudo -u $real_user cmake ..
 sudo -u $real_user make -j4
 make install
+pip3 install protobuf==3.3.0
+pip3 install llvmlite
+pip3 install numba
+
+pip3 install 'https://github.com/jetson-nano-wheels/python3.6-scipy-1.5.4/releases/download/v0.0.1/scipy-1.5.4-cp36-cp36m-linux_aarch64.whl'
+
+sudo pip3 install packaging
+sudo pip3 install jupyterlab
