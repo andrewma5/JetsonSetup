@@ -12,7 +12,7 @@ apt-get install -y python3-pip python3-venv python3-dev python3-wheel python3-db
 pip3 install -U pip
 pip3 install wget Cython
 
-cd Downloads/
+cd ~/Downloads/
 apt-get install -y libboost-all-dev build-essential python-setuptools libboost-python-dev libboost-thread-dev
 apt-get install -y python-numpy
 
